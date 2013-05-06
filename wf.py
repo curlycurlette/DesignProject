@@ -162,13 +162,6 @@ if (not arcpy.Exists(target + '/gruyere.gdb/roadFeatDat/roadSlope.shp ') or reco
         print e.message
         winsound.Beep(1000,1000)
         sys.exit()
-#     try:
-#         arcpy.FeatureClassToGeodatabase_conversion("roadSel", target + "/gruyere.gdb/roadFeatDat")
-#     except Exception as e:
-#         print e.message
-#         arcpy.AddError(e.message)
-#         winsound.Beep(2500,1000)
-#         sys.exit()
     
          
 # # Transfer slope attribute to road
